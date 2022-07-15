@@ -42,62 +42,7 @@ public class LambdaHandler implements RequestHandler<LexInput, Output> {
     }
 
 
-//    @Override
-//    public Output handleRequest(Object input, Context context) {
-//        logger.info("Input received: "+ input.toString()+ " "+ context.toString());
-//        String output="{\n" +
-//                "          \"sessionState\": {\n" +
-//                "            \"dialogAction\": {\n" +
-//                "              \"type\": \"Close\"\n" +
-//                "            },\n" +
-//                "            \"intent\": {\n" +
-//                "              \"name\": \"Say-Hello\",\n" +
-//                "               \"state\": \"Fulfilled\"\n" +
-//                "            }\n" +
-//                "          },\n" +
-//                "          \"messages\": [\n" +
-//                "           {\n" +
-//                "             \"contentType\": \"PlainText\",\n" +
-//                "             \"content\": 'this is a test from lambda-node'\n" +
-//                "            }\n" +
-//                "        ]  \n" +
-//                "        }";
-//        Output outputTest = new Output();
-//        outputTest.getSessionState().getDialogAction().setType("Close");
-//        outputTest.getSessionState().getIntent().setName("Query");
-//        outputTest.getSessionState().getIntent().setState("Fulfilled");
-//        Messages messages = new Messages();
-//        messages.setContentType("PlainText");
-//        messages.setContent("this is a test from lambda-java");
-//        outputTest.getMessages().add(messages);
-//        logger.info("Output created: "+ outputTest + " ");
-//        return outputTest;
-//    }
 
-
-//    @Override
-//    public LambdaResponse handleRequest(Param input, Context context) {
-//        logger.info("Input received: "+ input.toString()+ " "+ context.toString());
-//        List<Publication> publicationList=athenaService.getDataFromAthena("Select * from workshoplabkc.publication limit 10");
-//        ResponseManager responseManager = new ResponseManager();
-//        for (Question question: input.getQuestions()) {
-//            responseManager.add(question.getQuestion(),publicationList,publicationList.size());
-//        }
-//
-//        LambdaResponse lambdaResponse= new LambdaResponse();
-//        lambdaResponse.setResponseList(responseManager.get());
-//        logger.info("Output received: " + lambdaResponse+" ");
-//        return lambdaResponse;
-//    }
-
-//    @Override
-//    public List<String> handleRequest(Param input, Context context) {
-//        logger.info("Input received: "+ input.toString()+ " "+ context.toString());
-//        QueryManager queryManager = new QueryManager(input);
-//        List<String> queries=queryManager.getQuery();
-//        logger.info("Output received: " + queries+" ");
-//        return queries;
-//    }
 
     @Override
     public Output handleRequest(LexInput input, Context context) {
