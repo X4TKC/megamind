@@ -1,4 +1,4 @@
-package org.bootcamp.latam.model;
+package org.bootcamp.latam.model.lex;
 
 import java.util.ArrayList;
 import java.util.List;

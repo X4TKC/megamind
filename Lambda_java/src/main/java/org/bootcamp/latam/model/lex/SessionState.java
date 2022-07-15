@@ -1,4 +1,4 @@
-package org.bootcamp.latam.model;
+package org.bootcamp.latam.model.lex;
 
 public class SessionState {
     private DialogAction dialogAction;

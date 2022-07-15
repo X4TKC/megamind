@@ -58,4 +58,16 @@ public class Publication {
     public void setPublication(String publication) {
         this.publication = publication;
     }
+
+    @Override
+    public String toString() {
+        return "Publication{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", type='" + type + '\'' +
+                ", language='" + language + '\'' +
+                ", dateedition='" + dateedition + '\'' +
+                ", publication='" + publication + '\'' +
+                '}';
+    }
 }
